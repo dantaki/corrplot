@@ -515,8 +515,8 @@ corrplot <- function(corr,
       color[floor(newcorr * length(color)) + 1] # new color returned
     }
   }
-
-  col.fill <- assign.color()
+  ################DANTAKI#######################
+  col.fill <- assign.color(p.mat)
 
   isFALSE <- function(x) identical(x, FALSE)
   isTRUE <- function(x) identical(x, TRUE)
